@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <title>Run game </title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +11,27 @@
 </head>
 <body>
   
- 
+  <div class="container">
+    <h1 class="text-dark text-center">Yugurishga chiqamizmi yo'qmi?</h1>
+    <form action="https://echo.htmlacademy.ru" class="checkRun-form d-flex flex-column align-items-center w-50 mx-auto">
+      <div class="form-group d-flex align-items-center">
+        <label class="flex-shrink-0 mb-0 mx-2" for="exampleInputEmail1">Havo harorati</label>
+        <input type="number" class="temp-input form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="check-rain form-check-input" id="rain">
+        <label class="form-check-label" for="rain">Yomg'ir yog'yaptimi ?</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="check-simulator form-check-input" id="simulator">
+        <label class="form-check-label" for="simulator">Trenajor zali ochiqmi ?</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Check</button>
+    </form>
+  </div>
+  
+  
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
